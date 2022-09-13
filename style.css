@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+#pokedex{
+    width: 900px;
+    height: 800px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+/* Lista de Pokemon*/
+#pokemon_list{
+    width: 380px;
+    height: 700px;
+    overflow-y: scroll;
+    padding: 0 5px;
+
+}
+.pokemon{
+    background-color: white;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.pokemon:hover{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+}
+
+#pokemon_details{
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+    border-radius: 15px;
+}
+#pokemon_info{
+    width: 350px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#pokemon_info h2{
+    margin-bottom: 10px;
+}
+#pokemon_info ul{
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+#pokemon_img{
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(180deg, #BC0000 47.91%, #000000 47.92%, rgba(0, 0, 0, 0.73) 51.56%, #E9E9E9 51.57%);
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+#pokemon_info_stats{
+    width: 350px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#pokemon_info_stats h2{
+    margin-bottom: 10px;
+}
+
+
+
+.pokemon_info_status{
+    margin-right: 20px;
+    height: 30px;
+    font-weight: bold;
+}
+
+
+
+.pokemon_img{
+    background-color: white;
+    height: 80px;
+}
+.pokemon_id{
+    font-weight: bold;
+    margin: 0 25px;
+}
+
+.status_list{
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}

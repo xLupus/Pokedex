@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="pokedex">
+        <div id="pokemon_details">
+            <img id="pokemon_img">
+
+            <div id="pokemon_info">
+                <h2>Info: <span id="pokemon_info_nome_value">--</span></h2>
+                <ul>
+                    <li>ID: #<span id="pokemon_info_id_value">--</span></li>
+                    <li>Type: <span id="pokemon_info_type_value">--</span></li>
+                    <li>Base Experience: <span id="pokemon_info_base-experience_value">--</span></li>
+                    <li>Weight: <span id="pokemon_info_weight_value">--</span></li>
+                    <li>Height: <span id="pokemon_info_height_value">--</span></li>
+                </ul><!-- pokemon_info -->
+            </div>
+
+
+            <div id="pokemon_info_stats">
+                <h2>Stats:</h2>
+                <ul class="status_list">
+                    <li class="status">HP: <span class="status_value">--</span></li>
+                    <li class="status">Attack: <span class="status_value">--</span></li>
+                    <li class="status">Defense: <span class="status_value">--</span></li>
+                    <li class="status">Special-Attack: <span class="status_value">--</span></li>
+                    <li class="status">Special-Defense: <span class="status_value">--</span></li>
+                    <li class="status">Speed: <span class="status_value">--</span></li>
+                </ul>
+            </div> <!-- pokemon_info_stats -->
+        </div> <!-- pokemon_info -->
+
+        <div id="pokemon_list">
+            <ul id="pokemons"></ul>
+        </div>
+    </div> <!-- pokedex -->
+
+    <script src="./script.js" charset="utf-8"></script>
+</body>
+</html>
