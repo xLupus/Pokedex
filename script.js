@@ -2,6 +2,16 @@ let getPokemon = new XMLHttpRequest();
 let lista      = document.getElementById('pokemons');
 let info       = document.getElementById('pokemon_details');
 
+let card_color = {
+    'Bug'     : '#cad479', 'Dark'   : '#a99a91', 'Dragon'  : '#a987fa',
+    'Electric': '#fae282', 'Fairy'  : '#f4c1cd', 'Fighting': '#d9827e',
+    'Fire'    : '#f6b282', 'Flying' : '#cabcf6', 'Ghost'   : '#a99ac1',
+    'Grass'   : '#aede96', 'Ground' : '#ecd9a4', 'Ice'     : '#c1e7e7',
+    'Normal'  : '#cacaae', 'Poison' : '#c68cc6', 'Psychic' : '#fa9ab7',
+    'Rock'    : '#d4c687', 'Steel'  : '#d4d4e2', 'Water'   : '#a4bcf6',
+    'Legend'  : '#a4c6bc'
+};
+
 getPokemon.open('GET', 'https://pokeapi.co/api/v2/pokemon?limit=151', true);
 getPokemon.send();
 getPokemon.onreadystatechange = function(){
@@ -51,6 +61,8 @@ function getPokemonStats(id){
         for(let i = 0; i < response.types.length; i++)
             type[i] = response.types[i].type.name.charAt(0).toUpperCase() +  response.types[i].type.name.slice(1);
 
+        info.style.backgroundColor = card_color[type[0]];
+        
         type = type.join(" / ");
 
         for(let i = 0; i < response.stats.length; i++){
